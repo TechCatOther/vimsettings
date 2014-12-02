@@ -59,7 +59,7 @@ if has('vim_starting')
  endif
 
  " Required:
- call neobundle#rc(expand('~/.vim/bundle/'))
+ call neobundle#begin(expand('~/.vim/bundle/'))
 
  " Let NeoBundle manage NeoBundle
  " Required:
@@ -75,7 +75,7 @@ if has('vim_starting')
 
  " You can specify revision/branch/tag.
  NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
+call neobundle#end()
  " Required:
  filetype plugin indent on
 
